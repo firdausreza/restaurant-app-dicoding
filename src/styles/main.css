@@ -31,12 +31,27 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    color: var(--color-tertiary);
 }
 
 .navbar #brand {
     font-weight: bold;
     font-size: 32px;
+    color: var(--color-tertiary);
+    padding: 10px;
+}
+
+#brand-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar #hamburger {
+    display: none;
+    font-size: var(--text-md);
+    text-decoration: none;
+    color: var(--color-tertiary);
+    padding: 10px;
 }
 
 #nav-wrapper {
@@ -46,7 +61,7 @@ header {
 }
 
 #nav-wrapper .nav-link {
-    margin: 0 20px;
+    padding: 15px 20px;
     text-decoration: none;
     font-weight: 600;
     color: var(--color-quarternary);
@@ -188,10 +203,35 @@ footer {
         align-items: center;
         max-width: 100%;
         margin: 0;
+        /*padding: 20px 0 0 0;*/
+    }
+
+    #brand-wrapper {
+        width: 100%;
     }
 
     #nav-wrapper {
+        border-radius: 15px;
         margin-top: 20px;
+        padding: 20px 0;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--color-tertiary);
+        align-items: start;
+        display: none;
+    }
+
+    #nav-wrapper.active {
+        display: flex;
+    }
+
+    .navbar #hamburger {
+        display: block;
+    }
+
+    .navbar #nav-wrapper .nav-link {
+        margin-left: 20px;
+        color: var(--color-primary);
     }
 
     #hero-jumbotron p {

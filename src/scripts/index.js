@@ -3,6 +3,22 @@ import '../styles/main.css';
 import data from './data.js'
 
 const cardContainerElement = document.getElementById('content-wrapper');
+const hamburgerButton = document.getElementById('hamburger');
+const navWrapperElement = document.getElementById('nav-wrapper');
+
+let isToggled = false;
+
+hamburgerButton.addEventListener('click', toggleHamburger);
+
+function toggleHamburger() {
+  if (isToggled === false) {
+    navWrapperElement.classList.add('active');
+    isToggled = !isToggled;
+  } else {
+    navWrapperElement.classList.remove('active');
+    isToggled = !isToggled;
+  }
+}
 
 const getAllData = (items) => {
   console.log(data)
