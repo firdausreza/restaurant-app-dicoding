@@ -16,6 +16,20 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 /*
    ***** HEADER *****
 */
