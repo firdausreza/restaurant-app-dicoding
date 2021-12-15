@@ -66,6 +66,7 @@ header {
     text-decoration: none;
     color: var(--color-tertiary);
     padding: 10px;
+    outline: none;
 }
 
 #nav-wrapper {

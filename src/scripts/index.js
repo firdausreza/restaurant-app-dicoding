@@ -8,6 +8,14 @@ const app = new App({
   button: document.querySelector('#hamburger'),
   drawer: document.querySelector('#nav-wrapper'),
   content: document.querySelector('#main-content'),
+});
+
+window.addEventListener('hashchange', () => {
+  app.renderPage();
+});
+
+window.addEventListener('load', () => {
+  app.renderPage();
 })
 // const cardContainerElement = document.getElementById('content-wrapper');
 // const hamburgerButton = document.getElementById('hamburger');
