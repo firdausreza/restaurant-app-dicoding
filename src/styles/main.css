@@ -118,7 +118,7 @@ header {
    ***** CONTENT *****
 */
 
-#explore {
+#main-content {
     background-color: var(--color-primary);
 }
 
@@ -174,13 +174,105 @@ header {
     color: var(--color-tertiary);
 }
 
-.card-content h2 {
-    margin: 10px 0;
+.card-content a {
+    text-decoration: none;
+    font-size: var(--text-md);
+    font-weight: bold;
+    color: var(--color-tertiary);
 }
 
 .card-content p {
     font-weight: 500;
 }
+
+/*
+   ***** DETAIL PAGE *****
+*/
+
+#detail-container {
+    max-width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#detail-container h1 {
+    font-size: var(--text-lg);
+    font-weight: bold;
+    color: var(--color-tertiary);
+}
+
+.detail-item .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-item .content img {
+    max-width: 100%;
+}
+
+.detail-item .content .restaurant-profile {
+    padding: 30px;
+}
+
+.restaurant-profile h1, .restaurant-profile h2 {
+    font-weight: bold;
+    margin: 5px 0;
+    color: var(--color-tertiary);
+}
+
+.restaurant-profile p {
+    margin: 10px 0;
+    color: var(--color-quarternary);
+}
+
+.customer-review {
+    width: 100%;
+}
+
+.customer-review h1 {
+    font-size: var(--text-lg);
+    font-weight: bold;
+    color: var(--color-tertiary);
+}
+
+.customer-review .card {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.customer-review .card h2 {
+    margin: 0;
+    font-size: 20px;
+    color: var(--color-tertiary);
+}
+.customer-review .card p {
+    margin: 5px 0;
+    color: var(--color-quarternary);
+}
+
+.customer-review .card .date-text {
+    color: gray;
+}
+
 
 /*
    ***** FOOTER *****
